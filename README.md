@@ -14,4 +14,4 @@ I believe that clear documentation and good code comments help others to underst
 how I have used them to achieve the goals of the project. Reference:
 X3DOM open source project: http://www.x3dom.org/
 
-Translated with www.DeepL.com/Translator (free version)
+
