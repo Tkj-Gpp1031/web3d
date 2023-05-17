@@ -34,18 +34,6 @@ function original() {
 	}
 }
 
-function zero() {
-	
-	var texturez = document.querySelector('ImageTexture');
-	var texturePathz = 'maps/mpm_vol.09_p35_can_red_zero.JPG';
-	if (texturez.url === texturePathz) {
-	  texturez.url = 'maps/mpm_vol.09_p35_can_red_zero.JPG';
-	  
-	} else {
-	  texturez.url = texturePathz;
-	  
-	}
-}
 
 function sliver() {
 	
@@ -59,69 +47,6 @@ function sliver() {
 	  
 	}
 } 
-//sprite
-function original1() {
-	var texturez = document.querySelector('ImageTexture');
-	var texturePathz = 'maps/mpm_vol.09_p35_can_green_diff.JPG';
-	if (texturez.url === texturePathz) {
-	  texturez.url = 'maps/mpm_vol.09_p35_can_green_diff.JPG';
-	  
-	} else {
-	  texturez.url = texturePathz;
-	  
-	}
-}
-
-function zero1() {
-	
-	var texturez = document.querySelector('ImageTexture');
-	var texturePathz = 'maps/mpm_vol.09_p35_can_green_sliver_diff.JPG';
-	if (texturez.url === texturePathz) {
-	  texturez.url = 'maps/mpm_vol.09_p35_can_green_sliver_diff.JPG';
-	  
-	} else {
-	  texturez.url = texturePathz;
-	  
-	}
-}
-//fanta
-function orange() {
-	var texturez = document.querySelector('ImageTexture');
-	var texturePathz = 'maps/mpm_vol.09_p35_can_orange_diff.jpg';
-	if (texturez.url === texturePathz) {
-	  texturez.url = 'maps/mpm_vol.09_p35_can_orange_diff.jpg';
-	  
-	} else {
-	  texturez.url = texturePathz;
-	  
-	}
-}
-
-function apple() {
-	
-	var texturez = document.querySelector('ImageTexture');
-	var texturePathz = 'maps/mpm_vol.09_p35_can_apple_diff.jpg';
-	if (texturez.url === texturePathz) {
-	  texturez.url = 'maps/mpm_vol.09_p35_can_apple_diff.jpg';
-	  
-	} else {
-	  texturez.url = texturePathz;
-	  
-	}
-}
-function grapes() {
-	
-	var texturez = document.querySelector('ImageTexture');
-	var texturePathz = 'maps/mpm_vol.09_p35_can_grapes_diff.jpg';
-	if (texturez.url === texturePathz) {
-	  texturez.url = 'maps/mpm_vol.09_p35_can_grapes_diff.jpg';
-	  
-	} else {
-	  texturez.url = texturePathz;
-	  
-	}
-}
-
 
 
 
