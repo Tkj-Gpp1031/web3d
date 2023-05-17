@@ -14,7 +14,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../application/css/custom_home.css" crossorigin="anonymous">
 
-      <!-- Lets have some fonts  
+      <!-- Lets have some fonts   -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
     <!-- fancyBox3 -->
@@ -41,11 +41,11 @@
         }
 
     .image_size{
-      width: 300px;
+      width: 200px;
         height: 400px;
     }
     .wrap{
-    width: 300px;//容器大小要和图片大小保持一致。
+    width: 200px;//容器大小要和图片大小保持一致。
     height: 400px;
     margin: 50px auto 0;
     overflow: hidden;
@@ -79,10 +79,10 @@ ol li{
         transform: translateX(0px);
       }
       33% {
-        transform: translateX(-300px);
+        transform: translateX(-200px);
       }
       66% {
-        transform: translateX(-600px);
+        transform: translateX(-400px);
       }
       100% {
         transform: translateX(0px);
@@ -119,7 +119,8 @@ ol li {
 
 
   </style>
-  <body background:#FFCCCC;>
+  <body >
+    
     <div id="transition">
       <div id="logo_a">
         <div id="my-image" class="logo" >
@@ -165,9 +166,11 @@ ol li {
                 <h3>Great Britain</h3>
                 <p>The home of Coca-Cola GB</p>
               </a>
-
+            
               <!-- link Menu Icon button to the links class navbar-collapse selector] -->
-              <div class="collapse navbar-collapse" id="navbarSupportedContent" float:left>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+                
+              <div class="navbar-text float-left copyright">
                 <!-- Links -->
                 <ul class="navbar-nav ml-auto">
                   <li class="nav-item">
@@ -187,22 +190,29 @@ ol li {
                     </div>
                   </li>
                   <li class="nav-item">
-                <a id="navModels" class="nav-link"  href="ColaCan" data-toggle="popover" data-trigger="hover" data-placement="bottom" title="X3D Models" data-content="There are three X3D models: Coke, Sprite and Pepper">Models</a>
+                <a id="navModels" class="nav-link"  href="ColaCan" data-toggle="popover" data-trigger="hover" data-placement="bottom" title="X3D Models" data-content="There are three X3D models: Coke, Sprite and Fanta">Models</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#" data-toggle="modal" data-target="#contactModal">Contact</a>
+                  <a class="nav-link" href="#" data-toggle="modal" data-target="#contactModal">Contact</a>
                   </li>
+                  <li class="nav-item">
+                  <a id="navModels" class="nav-link"  href="https://github.com/Tkj-Gpp1031/web3d.git/" data-toggle="popover" data-trigger="hover" 
+                  data-placement="bottom" title="Github" data-content="There have all source we use , include X3D models ,php ,
+                  css,javascript,images,db files and readme file">Github</a>
+                  </li>
+                  
                 </ul>
               </div>
+              
             </div>
-
+          </nav>
             <!-- Navbar Menu Icon -->
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
             
             
-        </nav>
+        
       
         <HR align=center width=100% color=#987cb9 SIZE=1>
         <!-- This is the main contents of the page, it has a background image across 1 column, followed by three columns holding cards in a row for the 3 images and associated texts
@@ -225,12 +235,14 @@ ol li {
 
             </div> 
 
-            <div class="t1">
-              <p >Our brands</p>
-            </div>
+            
+
+              
+            <p  align="center" style="font-size:30px"; >Our brands</p>
 
 
           <div class="row" id = "1">
+          
             <div class="col-sm-4">
               <div class="container" >
                 <div class="cardc" >
@@ -284,9 +296,11 @@ ol li {
                         <h2>Sprite</h2>
                         <text>Crisp, refreshing and clean-tasting, Sprite is a lemon and lime-flavoured soft drink. It first hit shop shelves back in 1961 and today it’s sold in more than 190 countries.</text>
                         <br>
-                        <button><a href="#">Buy now</a><button>
-                        <a href="ColaCan">about model</a>
+                        <div class="t2">
+                        <a href="#" class="button">Buy now</a>
+                        <a href="ColaCan" class="button">about model</a>
                         <a href="http://www.coca-cola.co.uk/drinks/sprite/sprite" class="btn btn-primary btn-responsive">Find out more ...</a>
+                        </div>
                       </div>
                       <img src="../application/assets/images/sprite_b.png" class="product_img">
                   </div>
@@ -437,7 +451,7 @@ ol li {
         var bubbles = document.getElementsByClassName("bubble");
         for (var i = 0; i < bubbles.length; i++) {
           var bubble = bubbles[i];
-          var delay = Math.random() * 4000; // 延迟时间
+          var delay = Math.random() * 3000; // 延迟时间
           setTimeout(animateBubble.bind(null, bubble), delay);
         }
       }
@@ -451,6 +465,9 @@ ol li {
 
   </body>
   <style>
+    body {
+      background-image: linear-gradient(rgba(126, 116, 116, 0.5), rgba(0, 0, 0, 0.5)), url('../application/assets/images/background2.jpg');
+    }
     #my-image:hover {
       transform: scale(1.15);
       transition: transform 0.2s ease-in-out;

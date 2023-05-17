@@ -52,6 +52,7 @@
           <!-- Link Menu item button to the links class navbar-collapse selector -->
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- Links -->
+            <div class="navbar-text float-left copyright">
             <ul class="navbar-nav ml-auto"> <!-- Use mx-auto to align centre, default to left or use mr-auto -->
               <!-- nothing changed from Lab 5 -->
               <li class="nav-item">
@@ -71,9 +72,14 @@
               <li class="nav-item">
                   <a class="nav-link" href="#" data-toggle="modal" data-target="#contactModal">Contact</a>
               </li>
+              <li class="nav-item">
+                  <a id="navModels" class="nav-link"  href="https://github.com/Tkj-Gpp1031/web3d.git/" data-toggle="popover" data-trigger="hover" 
+                  data-placement="bottom" title="Github" data-content="There have all source we use , include X3D models ,php ,
+                  css,javascript,images,db files and readme file">Github</a>
+                </li>
             </ul>
           </div>
-
+        </div>
         </div>
                  
         <!-- Collapsible Navbar Menu Icon -->
@@ -128,7 +134,7 @@
                           <div class="model3D">
                               <x3d  id="wire">
                                   <scene>
-                                      <inline nameSpaceName="model" mapDEFToID="true" onclick="animateModel();" url="../application/assets/x3d/sprite_c.x3d" > </inline>
+                                      <inline nameSpaceName="model" mapDEFToID="true" onclick="animateModel();" url="../application/assets/x3d/sprite_c1.x3d" > </inline>
                                   </scene>
                               </x3d>
                           </div> 
@@ -151,8 +157,13 @@
                           </li>
                       </div>
                       <div class="card-body">
+                      <a href="../application/assets/images/renderImages/sprite.png" data-fancybox="" data-caption="My 3D Coke Can Render">
+                            <img class="card-img-top img-fluid img-thumbnail" src="../application/assets/images/sprite.jpg" alt="Coca Cola">
+                          </a>
                           <div class="card-title title_gallery drinksText"></div>
-                          <div class="gallery" id="gallery"></div>
+                          <div class="gallery" id="gallery">
+                          
+                          </div>
                           <div class="card-text description_gallery drinksText"></div>
                       </div>
                   </div> <!-- End gallery card -->
@@ -190,29 +201,7 @@
                       </div>
                 </div>
 
-                <div class="col-sm-3">
-                  <div class="card text-left">
-                      <div class="card-header">
-                        <ul class="nav nav-tabs card-header-tabs">
-                        <!-- Dropdown nav-tab -->
-                        <li class="nav-item">
-                          <a class="nav-link active" href="#" id="texture-link">Texture</a>
-                        </li>
-                        </ul>
-                      </div>
-                      <div class="card-body" id="texture-card" style="display:none">
-                        <div class="card-Title x3dCamera_Subtitle drinksText">
-                          <h3>Texture Select</h3>
-                        </div>                            
-                        <a class="btn btn-success btn-responsive" onclick="original1();">Original</a>
-                        <a class="btn btn-primary btn-responsive" onclick="zero1();">Zero</a>
-                        <a class="btn btn-secondary btn-responsive" onclick="old1();">Old</a>
-                        <div class="card-text x3dCameraDescription drinksText">
-                          <p>These buttons select a limited range of X3D model viewpoints, use the dropdown menu for more camera views</p>
-                        </div>
-                      </div>
-                    </div>
-              </div>
+                
                 <!-- Column for the animation controls -->
                 <div class="col-sm-3">
                     <div class="card text-left">
@@ -475,45 +464,7 @@
       </script>
 
       <script>
-          //sprite
-          function original1() {
-	          var texturez = document.querySelector('ImageTexture');
-	          var texturePathz = 'maps/mpm_vol.09_p35_can_green_diff.JPG';
-	          if (texturez.url === texturePathz) {
-	            texturez.url = 'maps/mpm_vol.09_p35_can_green_diff.JPG';
-	  
-	          } else {
-	            texturez.url = texturePathz;
-	  
-	          }
-          }
-
-          function zero1() {
-	
-	          var texturez = document.querySelector('ImageTexture');
-	          var texturePathz = 'maps/mpm_vol.09_p35_can_green_sliver_diff.JPG';
-	          if (texturez.url === texturePathz) {
-	            texturez.url = 'maps/mpm_vol.09_p35_can_green_sliver_diff.JPG';
-	  
-	          } else {
-	            texturez.url = texturePathz;
-	  
-	          }
-          }
-
-          function old1() {
-	
-	          var texturez = document.querySelector('ImageTexture');
-	          var texturePathz = 'maps/mpm_vol.09_p35_can_green_blue_diff.JPG';
-	          if (texturez.url === texturePathz) {
-	            texturez.url = 'maps/mpm_vol.09_p35_can_green_blue_diff.JPG';
-	  
-	          } else {
-	            texturez.url = texturePathz;
-	  
-	          }
-          }
-
+          
         function wireframe()
         {
 	        var e = document.getElementById('wire');
@@ -555,7 +506,7 @@
 
   <style>
     body {
-      background-color: green;
+      background-image: linear-gradient(rgba(126, 116, 116, 0.5), rgba(0, 0, 0, 0.5)), url('../application/assets/images/background1.jpg');
     }
     #my-image:hover {
       transform: scale(1.15);
